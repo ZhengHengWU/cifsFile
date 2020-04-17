@@ -38,5 +38,5 @@ echo -e "\033[32m ============================================ \033[0m"
 echo -e "-----------挂载：pic-----------"
 echo -e "\033[32m ============================================ \033[0m"
 umount /nfs-files/pic
-mount -t cifs -o username="Share",password="xxx",iocharset=utf8,dir_mode=0777,file_mode=0777 //server/Share /nfs-files/pic
+mount -t cifs -o vers=2.0,username="Share",password="xxx",iocharset=utf8,dir_mode=0777,file_mode=0777 //121.43.161.147/Share /nfs-files/pic  
 echo -e "\033[32m ============================================ \033[0m"
